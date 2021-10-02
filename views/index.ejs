@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+<body id="body">
+	<div class="wrapper">
+		<%- include('./partials/header.ejs') %>
+		<section class="header-back">
+			<div>
+				<svg class="edge-header" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1439.82 306.22"><defs><style>.cls-1{fill:#fff;}</style></defs><title>header3</title><polyline style="fill: #00398A;" points="1439.82 306.22 0 0.8 0 0 1439.82 0"/></svg>
+				<video autoplay muted loop class="header-video">
+					<source src="./video/niger-background.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="container-fluid position-relative">
+				<h1 class="container-title changing-title">Let`s find <br> you a villa</h1>
+				<div class="card border-0 rounded-2 p-4">
+				  	<div class="card-body p-0">
+				  		<form action="/" method="POST" class="form row">
+				  			<div class="col-md-2 ordr2">
+								<select name="select1" class="form-select select-header" >
+									<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+				  			</div>
+				  			<div class="col-md-2 ordr3">
+				  				<select name="select2" class="form-select select-header" aria-label="Default select example">
+								  	<option selected>Open this select menu</option>
+								  	<option value="1">One</option>
+							  		<option value="2">Two</option>
+								  	<option value="3">Three</option>
+								</select>
+				  			</div>
+				  			<div class="col-md-4 ordr1">
+				  				<div class="input-group mb-md-3">
+									<input type="text" name="city" class="form-control header-input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								</div>
+				  			</div>
+				  			<div class="col-md-2 ordr4">
+				  				<select name="select3" class="form-select select-header" aria-label="Default select example">
+								  	<option selected>Open this select menu</option>
+								  	<option value="1">One</option>
+							  		<option value="2">Two</option>
+								  	<option value="3">Three</option>
+								</select>
+				  			</div>
+				  			<div class="col-md-2 ordr5">
+				  				<select name="select4" class="form-select select-header" aria-label="Default select example">
+								  	<option selected>Open this select menu</option>
+								  	<option value="1">One</option>
+							  		<option value="2">Two</option>
+								  	<option value="3">Three</option>
+								</select>
+				  			</div>
+				  			<div class="d-flex justify-content-center align-items-center flex-column ordr6">
+				  				<button type="submit" class="btn-primary px-5">Search</button>
+				  			</div>
+				  		</form>
+				  	</div>
+				</div>
+			</div>
+		</section>
+		<main class="full-page" style="top: 70px;">
+			<article class="container-fluid my-4">
+				<div class="card-wrapper my-2">
+					<% if(blogs.length) { %>
+						<% blogs.forEach(({ title, price, picture }) => { %>
+							<div class="card bg-dark text-white border-0 rounded-0">
+								<img src="./image/<%= picture %>" class="img-fluid rounded-0" alt="card-image">
+								<div class="card-img-overlay rounded-0 d-flex justify-content-end flex-column">
+									<a href="#" class="card-text m-0 stretched-link text-white text-decoration-none"><%= title %></a>
+									<hr class="card-line">
+									<h5 class="card-detail">AED <%= price %></h5>
+								</div>
+							</div>
+						<% }) %>
+					<% } %>
+				</div>
+			</article>
+			<section class="py-5 container-villa">
+				<div class="container-fluid">
+					<div class="row justify-content-between">
+						<div class="card col-md-3 border-0 bg-transparent">
+							<div class="card-body">
+							<h1>
+								Best
+								<br>
+								off-plan
+								deals.
+							</h1>
+							<a href="#" class="primary-text text-decoration-none">View all</a>
+							</div>
+						</div>
+						<div class="card col-md-4 px-0 border-0 mt-sm-3">
+							<img src="./image/card-img-5.png" class="card-img-top rounded-0" alt="Villa">
+							<div class="card-body p-2 d-flex align-items-center">
+								<span class="card-title">Estata Villas</span>
+							</div>
+						</div>
+						<div class="card col-md-4 px-0 border-0 mt-sm-3">
+							<img src="./image/card-img-5.png" class="card-img-top rounded-0" alt="Villa">
+							<div class="card-body p-2 d-flex align-items-center">
+								<span class="card-title">Estata Villas</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home_featured_video">
+				<div class="container-fluid">
+					<div class="row py-5">
+						<div class="col-md-6 col-xs-12" style="z-index: 3;">
+							<video autoplay controls muted class="w-100 rounded-4 border-white border border-2">
+								<source src="./video/niger-background.mp4" type="video/mp4">
+							</video>  
+						</div>
+						<div class="col-md-6 col-xs-12 text-white d-flex align-items-end justify-content-center">
+							<div class="flex-column">
+								<h3 class="mb-4">Video of the week.</h3>
+								<p>
+									Follow us on social media for <br> the most exclusive real estate <br> news and photos from our <br> amazing property listings in <br> Dubai and Abu Dhabi.
+								</p>
+								<ul class="list-unstyled d-flex">
+									<li class="mx-2 social-item">
+										<a href="#" class="btn btn-transparent border-1 border-white text-white rounded-circle shadow" style="padding: 0.5rem 0.8rem;">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li class="mx-2 social-item">
+										<a href="#" class="btn btn-transparent border-1 border-white text-white rounded-circle shadow" style="padding: 0.5rem 0.8rem;">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li class="mx-2 social-item">
+										<a href="#" class="btn btn-transparent border-1 border-white text-white rounded-circle shadow" style="padding: 0.5rem 0.8rem;">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="mx-2 social-item">
+										<a href="#" class="btn btn-transparent border-1 border-white text-white rounded-circle shadow" style="padding: 0.5rem 0.8rem;">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home_trustpilot bg-light">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-5 col-sm-12 py-3">
+							<h2 class="fw-bold my-sm-3">
+								Don’t just take
+								<br>
+								our word for it.
+							</h2>
+							<p class="mt-3">
+								We pride ourselves in being customer centric.<br>
+								Which is why we are rated 5 stars on TrustPilot.<br>
+							</p>
+							<span class="pt-2">Read all reviews...</span>
+							<!-- <iframe title="Customer reviews powered by Trustpilot" src="https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&businessunitId=5a2e82700a1d740ea8219c27#locale=en-US&styleHeight=150px&styleWidth=100%25&theme=light" loading="auto" frameborder="0" style="position: relative; height: 150px; width: 100%; border-style: none; display: block; overflow: hidden;"></iframe> -->
+						</div>
+						<div class="col-lg-7 col-md-12">
+							<div class="trustpilot_boxes">
+								<div class="row">
+									<div class="col-md-6 trustpilot_balloon">
+										<div class="card border-0 rounded-0 shadow-lg">
+											<img src="./image/trustpilot-star.svg" alt="trustpilot-star" class="card-img-top px-5 py-4">
+											<div class="card-body client">
+												<p>
+													Relocating to Dubai from Switzerland was challenging for us until we met Katie from Betterhomes. Katie understood our needs from the beginning, is always on time, responds quickly and has a great positive attitude. Very professional and a pleasure to have worked with.
+												</p>
+												<p class="text-p">
+													<b>Alexandra</b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 trustpilot_balloon">
+										<div class="card border-0 rounded-0 shadow-lg">
+											<img src="./image/trustpilot-star.svg" alt="trustpilot-star" class="card-img-top px-5 py-4">
+											<div class="card-body client">
+												<p>
+													Relocating to Dubai from Switzerland was challenging for us until we met Katie from Betterhomes. Katie understood our needs from the beginning, is always on time, responds quickly and has a great positive attitude. Very professional and a pleasure to have worked with.
+												</p>
+												<p class="text-p">
+													<b>Alexandra</b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 trustpilot_balloon">
+										<div class="card border-0 rounded-0 shadow-lg">
+											<img src="./image/trustpilot-star.svg" alt="trustpilot-star" class="card-img-top px-5 py-4">
+											<div class="card-body client">
+												<p>
+													Relocating to Dubai from Switzerland was challenging for us until we met Katie from Betterhomes. Katie understood our needs from the beginning, is always on time, responds quickly and has a great positive attitude. Very professional and a pleasure to have worked with.
+												</p>
+												<p class="text-p">
+													<b>Alexandra</b>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 trustpilot_balloon">
+										<div class="card border-0 rounded-0 shadow-lg">
+											<img src="./image/trustpilot-star.svg" alt="trustpilot-star" class="card-img-top px-5 py-4">
+											<div class="card-body client">
+												<p>
+													Relocating to Dubai from Switzerland was challenging for us until we met Katie from Betterhomes. Katie understood our needs from the beginning, is always on time, responds quickly and has a great positive attitude. Very professional and a pleasure to have worked with.
+												</p>
+												<p class="text-p">
+													<b>Alexandra</b>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<%- include('./partials/maps.ejs') %>
+		</main>
+		<%- include('./partials/footer.ejs') %>
+	</div> 
+	<%- include('./partials/sidenav.ejs')%>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>

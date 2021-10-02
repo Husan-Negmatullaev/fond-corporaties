@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Fond Corporaties</title>
+</head>
+<body id="body">
+	<div class="wrapper">
+		<%- include('./partials/header.ejs') %>
+        <section class="header-back _shape-image">
+			<div class="container-fluid">
+				<div class="row">
+                    <div class="col-md-5 col-sm-12 _shape-skew">
+                        <div class="card bg-rgba text-white p-2 rounded-0">
+                            <div class="card-body _shape-skew-content">
+                                <h1 class="card-title">Emaar <br> Beachfront</h1>
+                                <p class="mt-2">Seagull Point - A New Urban Haven At District One</p>
+                                <hr class="card-title__line">
+                                <p class="mt-2">
+                                    Presenting Seagull Point at District One, a gorgeous selection of one, two and three-bedroom waterfront apartments.
+                                </p>
+                                <a href="#" class="btn btn-primary p-2 px-4">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<main class="full-page my-4">
+			<section class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>
+                            About project
+                        </h2>
+                        <h2 class="fs-1">
+                            <b>Seagull Point <br> District One</b>
+                        </h2>
+                        <p class="card-paragraph">
+                            <span>We are delighted to present Seagull Point, a wonderful addition to the waterfront apartment community of District One Residences.</span>
+
+                            <span>In keeping with the aesthetic of the Residences, Seagull Point has a contemporary glass-fronted exterior and comprises one, two and three-bedroom apartments. All of the apartments are available fully furnished, with a choice of décor that radiates elegance and modernity while being thoroughly functional. Full-height windows ensure the most beautiful panoramas can be enjoyed and the tower enjoys an ideal location alongside the magnificent Crystal Lagoon.</span>
+
+                            <span>Offering 7 km of waterfront and its own private beach, the Crystal Lagoon is a destination like no other in the city and is an exclusive benefit for residents of District One. They also have access to 8.4 km of cycling and running track, open green spaces, parks, children’s play areas, schools and healthcare facilities.</span>
+
+                            <span>Sitting in a prime location at the very centre of the city, District One is mere minutes from the thriving Downtown district, home to the Dubai Mall and the magnificent Burj Khalifa. It also enjoys easy access to the popular Dubai Marina, and the Dubai International Airport.</span>
+
+                            <span>Seagull Point represents the best in waterfront living at District One.</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="bg-light p-3">
+                            <h2 class="text-uppercase text-center"><b>Register your interest</b></h2>
+                            <form action="/seagull-point" method="POST">
+                                <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                  <input name="name" type="text" placeholder="Name" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                    <input name="surname" type="text" placeholder="Surname" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                    <input name="phone" type="text" placeholder="Phone number" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                    <select name="select1" class="form-select select-card px-0 border-bottom" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill fs-5">Submit</button>
+                            </form>
+                        </div>
+                        <p class="text-center my-3">
+                            Fill in your details below to receive more information on this development. ​
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <video poster="../image/poster.png" muted loop controls class="header-video relative">
+                    <source src="../video/video.mp4" type="video/mp4">
+                </video>
+            </section>
+            <!-- <section class="container-fluid">
+                <div class="row">
+                    <h2>
+                        SEAGULL POINT DISTRICT ONE
+                    </h2>
+                    <h3>
+                        <b>Gallery</b>
+                    </h3>
+                </div>
+            </section> -->
+            <section class="container-fluid">
+                <div>
+                    <h2>
+                        SEAGULL POINT DISTRICT ONE
+                    </h2>
+                    <h3>
+                        <b>Payment Plan</b>
+                    </h3>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-3" scope="col">Payment</th>
+                            <th class="col-4" scope="col">Percent</th>
+                            <th class="col-5" scope="col">Milestones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 st Installment</td>
+                            <td>10%</td>
+                            <td>On Booking</td>
+                        </tr>
+                        <tr>
+                            <td>2 nd Installment</td>
+                            <td>10%</td>
+                            <td>30-Oct-2019</td>
+                        </tr>
+                        <tr>
+                            <td>3 rd Installment</td>
+                            <td>10%</td>
+                            <td>10% Construction</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="seagle-card">
+                <div class="container-fluid">
+                    <div class="row text-white align-items-center">
+                        <div class="col-md-6 col-sm-12">
+                            <h2>Seagull Point District One</h2>
+                            <p>Seagull Point - A New Urban Haven At District One</p>
+                            <hr class="text-danger">
+                            <p>Presenting Seagull Point at District One, a gorgeous selection of one, two and three-bedroom waterfront apartments.</p>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="bg-light p-3 rounded-4">
+                                <form action="/seagull-point" method="POST">
+                                    <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                      <input name="name" type="text" placeholder="Name" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                        <input name="surname" type="text" placeholder="Surname" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 bg-white p-2 rounded-2 shadow-sm">
+                                        <input name="phone" type="text" placeholder="Phone number" class="form-control bg-transparent border-0 border-bottom rounded-0 px-0 _card-form-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <button class="btn btn-primary w-100 py-2 rounded-pill fs-5">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md my-4">
+						<img src="../image/logo-footer.png" alt="logo-footer">
+					</div>
+				</div>
+				<h4>
+					<b>Experience <br> better.</b>
+				</h4>
+				<div class="row mt-4">
+					<div class="col-md-4 col-sm-12 d-flex justify-content-md-between">
+						<ul class="footer_list">
+							<li>
+								<a href="#">Awards</a>
+							</li>
+							<li>
+								<a href="#">Our Story</a>
+							</li>
+							<li>
+							   	<a href="#">Our Branches</a>
+							</li>
+							<li>
+							 	<a href="#">Meet The Team</a>
+							</li>
+							<li>
+								<a href="#">Why Choose Us</a>
+							</li>
+							<li>
+								<a href="#">A partner of houza.com</a>
+							</li>
+						</ul>
+					
+						<ul class="footer_list">
+							<li>
+								<a href="#">Blogs</a>
+							</li>
+							<li>
+								<a href="#">Careers</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<a href="#">Make a Complaint</a>
+							</li>
+							<li>
+								<a href="#">Publications</a>
+							</li>
+							<li>
+								<a href="#">Preferred Partners</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="footer_description">
+							<h4>Let's keep in touch</h4>
+							<p>
+								Subscribe to our newsletters and be the first to know about exclusive deals, property price trends and real estate news in the UAE.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div>
+							<input class="form-control bg-transparent border-0 rounded-0 border-bottom border-dark px-0 mt-2" type="text" placeholder="Name">
+							<input class="form-control bg-transparent border-0 rounded-0 border-bottom border-dark px-0 mt-2" type="text" placeholder="Surname">
+							<input class="form-control bg-transparent border-0 rounded-0 border-bottom border-dark px-0 mt-2" type="email" placeholder="Your e-mail">
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-12">
+						<a href="#" class="btn-primary py-2 px-5 shadow mt-sm-3">Subscribe</a>
+						<p class="footer_copy pt-2">
+							By clicking subscribe, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="side-nav" class="main_side_menu">
+		<ul class="menu">
+			<li class="logo">
+				<img src="../image/logo.jpg" alt="logo-menu">
+			</li>
+			<li>
+				<a href="#">Contact Us</a>
+			</li>
+			<li class="account-list">
+				<a href="#">My FC.Account</a>
+			</li>
+			<li>
+				<a href="#">Agents</a>
+			</li>
+			<li>
+				<a data-bs-toggle="collapse" href="#sales-service" role="button" aria-expanded="false" aria-controls="sales-service">
+					Our Sales Service
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<div class="collapse" id="sales-service">
+					<ul class="menu-collapse">
+						<li>Valuations</li>
+						<li>Sell my property</li>
+						<li>Buyer's Guide</li>
+						<li>Sellers's Guide</li>
+						<li>Mortgage Service</li>
+						<li>UK Investment</li>
+						<li>Internetional Investors</li>
+						<li>Currency</li>
+						<li>Conveyancing</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a data-bs-toggle="collapse" href="#rent-service" role="button" aria-expanded="false" aria-controls="rent-service">
+					Our Rent Service
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<div class="collapse" id="rent-service">
+					<ul class="menu-collapse">
+						<li>Valuations</li>
+						<li>Sell my property</li>
+						<li>Buyer's Guide</li>
+						<li>Sellers's Guide</li>
+						<li>Mortgage Service</li>
+						<li>UK Investment</li>
+						<li>Internetional Investors</li>
+						<li>Currency</li>
+						<li>Conveyancing</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a data-bs-toggle="collapse" href="#explore" role="button" aria-expanded="false" aria-controls="explore">
+					Explore
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<div class="collapse" id="explore">
+					<ul class="menu-collapse">
+						<li>Valuations</li>
+						<li>Sell my property</li>
+						<li>Buyer's Guide</li>
+						<li>Sellers's Guide</li>
+						<li>Mortgage Service</li>
+						<li>UK Investment</li>
+						<li>Internetional Investors</li>
+						<li>Currency</li>
+						<li>Conveyancing</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a data-bs-toggle="collapse" href="#about-us" role="button" aria-expanded="false" aria-controls="about-us">
+					About Us
+					<i class="fas fa-caret-down"></i>
+				</a>
+				<div class="collapse" id="about-us">
+					<ul class="menu-collapse">
+						<ul class="menu-collapse">
+							<li>Valuations</li>
+							<li>Sell my property</li>
+							<li>Buyer's Guide</li>
+							<li>Sellers's Guide</li>
+							<li>Mortgage Service</li>
+							<li>UK Investment</li>
+							<li>Internetional Investors</li>
+							<li>Currency</li>
+							<li>Conveyancing</li>
+						</ul>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">Agents</a>
+			</li>
+		</ul>
+		<div class="closebtn">
+			<a type="button" onclick="toggleNav()">
+				Close
+				<i class="fas fa-times"></i>
+			</a>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/app.js"></script>
+</body>
+</html>

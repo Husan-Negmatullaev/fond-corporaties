@@ -1,0 +1,780 @@
+@font-face {
+	font-family: "montserrat";
+	src: url('../fonts/Montserrat-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	font-family: "montserrat" !important;
+}
+
+hr {
+	opacity: 1;
+}
+
+hr.card-line {
+	width: 50px;
+	border-top: 2px solid #FFDA7B;
+}
+
+/* Bootstrap changes */
+
+.container-fluid {
+	max-width: 90%;
+}
+
+.select-header {
+	border: 0;
+	border-bottom: 1px solid #00398A;
+	border-radius: 0;
+	background-image: url('../image/arrow2.png');
+	color: #00398A;
+}
+
+.header-input {
+	color: #00398A !important;
+	text-align: center;
+	border: 0;
+	border-bottom: 1px solid #00398A;
+	border-radius: 0;
+}
+
+.header-input::placeholder {
+	color: #00398A !important;
+	opacity: 1;
+}
+
+.primary-text {
+	color: #E82A00;
+}
+
+.card-title {
+	margin: 0 !important;
+	font-weight: 800;
+}
+
+.rounded-4 {
+	border-radius: 20px;
+}
+
+.form-control::placeholder {
+	color: #000000;
+}
+
+#header .container-fluid {
+	margin-top: 0;
+}
+
+#header-fixed {
+	transition: padding .7s ease;
+}
+
+.scrolled {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	padding: 0 !important;
+}
+
+.scrolled img {
+	max-width: 100px;
+	padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+	box-shadow: none;
+}
+
+/* Header part */
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper header {
+	position: relative;
+	background: #00398A;
+	z-index: 2;
+}
+
+.big_logo {
+	display: block;
+}
+
+.logo_img {
+	max-width: 125px;
+}
+
+.fc_menu ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 20px 8px 20px;
+	margin: 0 5px;
+}
+
+.btn-primary,
+a.header-enquiry {
+	background: #FF2E00;
+ 	color: #fff;
+ 	padding: 4px 16px 4px;
+	transition: .5s;
+	border-radius: 5px;
+	text-decoration: none;
+	border: 0;
+	outline: 0;
+}
+
+.fc-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.box {
+	display: inline-block;
+	cursor: pointer;
+	padding: 6px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 18px;
+	height: 2px;
+	background-color: #ffffff;
+	margin: 3px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-4px, 4px);
+	transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-3px, -3px);
+	transform: rotate(45deg) translate(-3px, -3px);
+}
+
+/* Header Video part */
+
+.header-back {
+	background: url('../image/back.png') no-repeat center;
+	background-size: cover;
+	padding: 20px 0; 
+}
+
+.header-block {
+	position: relative;
+}
+
+.header-video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.header-video.relative {
+	position: relative;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.container-title {
+	color: #ffffff;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.edge-header {
+	position: relative;
+	top: -21px;
+	z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+	.container-fluid {
+		max-width: 96%;
+	}
+	.fc_menu,
+	.header-enquiry {
+		display: none !important;
+	}
+	.edge-header {
+		top: -21px;
+	}
+	.container-title {
+		font-size: 56px;
+		margin-bottom: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.fc_menu,
+	.header-enquiry {
+		display: none !important;
+	}
+	.container-fluid {
+		max-width: 96%;
+	}
+	.container-title {
+		font-size: 60px;
+		margin-bottom: 2.5rem;
+	}
+	.edge-header {top: -21px;}
+	.ordr1 {
+		order: 1;
+	}
+	.ordr2 {
+		order: 2;
+	}
+	.ordr3 {
+		order: 3;
+	}
+	.ordr4 {
+		order: 4;
+	}
+	.ordr5 {
+		order: 5;
+	}
+	.ordr6 {
+		order: 6;
+	}
+	.form.row {
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.container-title {
+		font-size: 48px;
+	}
+	.container-fluid {
+		max-width: 96%;
+	}
+	.form-select {
+		margin-bottom: 10px;
+	}
+}
+
+.card-wrapper {
+	display: grid;
+	grid-template: [start] 280px [row-2] 280px [row-end] 280px / 2fr 1fr;
+	gap: 10px;
+}
+
+.card-wrapper img {
+	width: 100%;
+	min-height: 100%;
+}
+
+.card-wrapper.reverse {
+	direction: rtl;
+}
+
+.card-wrapper.reverse * {
+	direction: ltr;
+}
+
+@media screen and (max-width: 768px) {
+	.card-wrapper {
+		display: grid;
+		grid-template: [start] 290px [row-end] / 1fr;
+		gap: 15px;
+	}	
+}
+
+/* Deals section */
+
+.full-page {
+	position: relative;
+}
+
+.offplan_deals {
+	background: #F2F2F2;
+}
+
+.social-item:nth-child(2) a {
+	padding: .5rem 1rem !important;
+}
+
+.social-item:nth-child(3) a,
+.social-item:nth-child(4) a {
+	padding: .5rem .9rem !important;
+}
+
+.container-villa {
+	background: url('../image/marble-floring.png') no-repeat;
+	background-size: cover;
+}
+
+/* Home Featured Video */
+
+.home_featured_video {
+	background: url('../image/night-vision.png') no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 2;
+	padding: 50px 0;
+}
+
+.home_featured_video::after {
+	height: 1px;
+    width: 76%;
+    position: absolute;
+    left: 82px;
+    background: #fff;
+    top: 170px;
+    content: '';
+	z-index: 1;
+}
+
+/* Home Trustpilot */
+
+.home_trustpilot p {
+	color: #001e60;
+}
+
+.trustpilot_boxes {
+	margin: -34px 0 -64px;
+	position: relative;
+}
+
+.trustpilot_boxes .row .col-md-6 {
+	margin-bottom: 20px;
+}
+
+.client p {
+	font-size: 14px;
+    line-height: 21px;
+    color: #001e60;
+}
+
+.trustpilot_balloon {
+	position: relative;
+	z-index: 100;
+}
+
+/* Footer */
+
+.container-maps {
+	margin: 4rem 0;
+	transform: skewY(1deg);
+}
+
+.container-maps h1 {
+	font-weight: 800;
+	color: #00398A;
+	text-shadow: 3px 3px 11px #00398A;
+	text-align: end;
+}
+
+.footer {
+	background: #F2F2F2;
+	background-size: cover;
+	overflow: hidden;
+	margin-top: 80px;
+	padding-top: 50px;
+	position: relative;
+	clip-path: polygon(0 0, 100% 39%, 100% 100%, 0% 100%);
+}
+
+.footer_list {
+	list-style: none;
+	padding: 0;
+}
+
+.footer_list li a {
+	font-size: 13px;
+    color: #000000;
+    line-height: 13px;
+    margin-bottom: 12px;
+	text-decoration: none;
+}
+
+.footer_list p {
+	font-size: 15px;
+}
+
+.footer_copy,
+.footer_description p {
+	font-size: 13px;
+	padding-top: 2rem;
+	margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.footer {
+		padding-top: 160px;
+	}
+	.trustpilot_boxes {
+		margin: -20px 0 -64px;
+    	position: relative;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer_list {
+		padding-right: 100px;
+	}
+}
+
+/* Modal */
+
+.main_side_menu {
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	padding: 15px 0;
+	transform: translateX(-300px);
+	transition: all 0.5s ease;
+}
+
+.open {
+	transition: all 0.5s ease;
+	transform: translateX(0);
+}
+
+.closebtn {
+	margin: 0 auto;
+	text-align: center;
+	transition: color .5s ease;
+	color: #001E60;
+	text-decoration: none;
+	transition: color .5s ease;
+}
+
+.closebtn a:hover {
+	color: #EB5F77 !important;
+}
+
+#side-nav {
+	transition: transform .5s;
+}
+
+.menu {
+	padding: 0;
+	list-style-type: none;
+}
+
+.menu li.logo img {
+	width: 70px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.menu li {
+	border-bottom: 1px solid #e2e8f1;
+}
+
+.menu-collapse li,
+.menu li a {
+	padding: 10px 20px;
+	display: flex;
+	width: 100%;
+	text-decoration: none;
+	color: #001e60;
+	transition: 
+		background .5s ease,
+		color .5s ease
+	;
+}
+
+.menu-collapse li:hover,
+.menu li a:hover {
+	background-color: #001e60;
+	color: #fff;
+	cursor: pointer;
+}
+
+.account-list {
+	background: url('../image/account-icon.png') no-repeat 97% center;
+    padding-right: 40px;
+    background-size: 26px;
+}
+
+.menu-collapse {
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu-collapse li{
+	border: 0;
+	padding: 10px 30px;
+}
+
+.menu li a {
+	justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+
+/* Screen Pages */
+
+/* OffPlan Page */
+
+.bg-rgba {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-title__line {
+	width: 30%;
+	height: 2px !important;
+	background: #FF2E00;
+	margin: 0;
+}
+
+.bg-light-nav {
+	background-color: #E4E4E4;
+}
+
+.menu-nav a {
+	color: #000000;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.bg-image {
+	background: url('../image/dubai-town.png') no-repeat;
+	background-size: cover;
+	padding: 3rem 0; 
+}
+
+.sponsor-container {
+	background: url('../image/marble-floring.png') no-repeat;
+	background-size: cover;
+}
+
+.collapse-button {
+	background: #001E60;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0;
+	padding: 15px;
+}
+
+.collapse-button:hover {
+	color: #ffffff;
+}
+
+.input-footer::placeholder {
+	color: #C4C4C4;
+}
+
+/* Buy Page */
+
+._header-padding {
+	padding: 15rem 0 5rem 0;
+}
+
+.breadcrumb .breadcrumb-item a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.marble-sort {
+	background: url('../image/marble.png') no-repeat;
+	background-size: cover;
+}
+.sort-categorie {
+	background: url('../image/night.png') no-repeat;
+	background-size: cover;
+}
+
+.line-categorie {
+	border-left: 1px solid #FFAF48;
+}
+
+.pagination .page-item {
+	margin: 0 10px;
+}
+
+.pagination .page-item a:focus {
+	box-shadow: none;
+}
+
+.pagination .page-item .page-link {
+	border-radius: 50%;
+	background: #ffffff;
+	color: #000000;
+	padding: 0.175rem 0.75rem;
+	border: 0;
+}
+
+.pagination .page-item.active .page-link {
+	border: 1px solid #E82A00;
+}
+
+.title-video {
+	position: absolute;
+}
+
+.card-paragraph span {
+	font-size: 15px;
+	margin: 10px 0;
+	display: block;
+}
+
+ol li::marker {
+	font-size: 1.75rem;
+}
+
+.container-list {
+	background: url('../image/marble-floring.png') no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+	.card-image {
+		position: relative;
+		bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.card-logo-fc {
+		display: none !important;
+	}
+	.card-title-fc {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card-image {
+		display: none;
+	}
+	.line-categorie {
+		border: none;
+		border-bottom: 1px solid #FFAF48;
+		width: 50%;
+	}
+	.marble-sort,
+	.sort-categorie {
+		flex-direction: column;
+		align-items: center;
+	}
+	.marble-sort,
+	.sort-categorie div {
+		padding: .5rem 0;
+	}
+	.marble-sort,
+	.sort-categorie .line-categorie {
+		padding: 0;
+	}
+	.card-buy {
+		font-size: 13px;
+	}
+	.card-buy h4 {
+		font-size: 17px;
+	}
+	.card-buy .col-md-4 {
+		width: 100%;
+		justify-content: center;
+	} 
+}
+
+@media screen and (max-width: 411px) {
+	.pagination .page-item {
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.menu-nav a {
+		font-size: 12px;
+	}
+}
+
+/* About Us Page */
+
+.header-back-about {
+	background: url('../image/about-us.png') no-repeat center;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+._shape-skew {
+	transform: skew(0, -3deg);
+}
+
+._shape-skew-content {
+	transform: skew(0, 3deg);
+}
+
+.about-us-image {
+	background: url('../image/about-us.png') no-repeat;
+	background-size: cover;
+}
+
+.about-us__person {
+	background: url('../image/bg.png') no-repeat center;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+/* Seagle Point page */
+
+.header-card {
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+}
+
+._shape-image {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+	padding: 8rem 0;
+}
+
+._card-form-input::placeholder {
+	color: #C4C4C4 !important;
+}
+
+.select-card {
+	border: 0;
+	border-bottom: 1px solid #C4C4C4;
+	border-radius: 0;
+	background-image: url('../image/arrow2.png');
+	color: #000000;
+}
+
+.seagle-video {
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.seagle-card {
+	background: url('../image/hqdefault.png') no-repeat center;
+	background-size: cover;
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: screen;
+	padding: 5rem 0;
+}
